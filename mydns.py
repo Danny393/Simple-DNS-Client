@@ -32,6 +32,9 @@ def buildQuery(queryAddress):
   packet += struct.pack("H", 0) #ARCOUNT
 
   #Data (Fill this in really quick)
+  #QNAME a domain name represented by a series of labels that are seperated by their length
+  #QTYPE 16 bit field that specifies the type of query
+  #QCLASS 16 bit field that specifies the class of query
 
   values = queryAddress.split(".")
 
