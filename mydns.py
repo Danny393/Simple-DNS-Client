@@ -188,7 +188,8 @@ def dnslookup(serverIP):
       ip += str(struct.unpack("B", data[pos:pos+1]))[1:-2]
       pos += 1
 
-      print("     Name:",name1,"    IP:",ip)
+      print("     Name: %-23s IP: %s"% (name1,ip))
+      #print("     Name:",name1,"    IP:",ip)
       listIP.append(ip)
 
     else:
